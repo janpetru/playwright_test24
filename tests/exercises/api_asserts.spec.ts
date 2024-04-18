@@ -16,7 +16,7 @@ test("Assert response header", async ({ request }) => {
   expect(contentType).toContain('application/json')
 });
 
-test("Assert response body", async ({ request }) => {
+test("Assert response body @githubactions", async ({ request }) => {
   const response = await request.get(
     "https://tegb-backend-877a0b063d29.herokuapp.com/train"
   );
